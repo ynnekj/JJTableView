@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JJOldAlipayBannerHeader">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VF6-i0-jxT" userLabel="topLine">
+                    <rect key="frame" x="0.0" y="18" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.68235294120000001" green="0.6705882353" blue="0.70588235290000001" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="KzP-pn-R8Z" customClass="JJLayoutConstraintHairline"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Rc-Yb-pVn" userLabel="bottomLine">
+                    <rect key="frame" x="0.0" y="111" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.68235294120000001" green="0.6705882353" blue="0.70588235290000001" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="H6o-1u-N1z" customClass="JJLayoutConstraintHairline"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qAo-cN-voG" userLabel="content">
+                    <rect key="frame" x="0.0" y="19" width="320" height="92"/>
+                    <subviews>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="nUy-x4-KZo">
+                            <rect key="frame" x="141" y="55" width="39" height="37"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="37" id="CsG-kc-Pa6"/>
+                                <constraint firstAttribute="width" constant="39" id="Xg1-6p-lxy"/>
+                            </constraints>
+                            <color key="pageIndicatorTintColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="currentPageIndicatorTintColor" red="0.01350190899" green="0.55196949390000005" blue="0.8639664104" alpha="1" colorSpace="calibratedRGB"/>
+                        </pageControl>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="nUy-x4-KZo" firstAttribute="centerX" secondItem="qAo-cN-voG" secondAttribute="centerX" id="2Or-Fv-GWj"/>
+                        <constraint firstAttribute="bottom" secondItem="nUy-x4-KZo" secondAttribute="bottom" id="95S-Ls-qZg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94509803920000002" green="0.94901960780000005" blue="0.97254901959999995" alpha="0.90052259290000003" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="9Rc-Yb-pVn" firstAttribute="top" secondItem="qAo-cN-voG" secondAttribute="bottom" id="13x-UQ-RNZ"/>
+                <constraint firstAttribute="trailing" secondItem="VF6-i0-jxT" secondAttribute="trailing" id="2Rr-yd-Qtz"/>
+                <constraint firstItem="VF6-i0-jxT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="18" id="KUB-hD-Kmy"/>
+                <constraint firstItem="qAo-cN-voG" firstAttribute="top" secondItem="VF6-i0-jxT" secondAttribute="bottom" id="PDW-q9-0Ou"/>
+                <constraint firstItem="VF6-i0-jxT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XdF-nv-gbh"/>
+                <constraint firstItem="9Rc-Yb-pVn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mcg-BJ-9AJ"/>
+                <constraint firstAttribute="bottom" secondItem="9Rc-Yb-pVn" secondAttribute="bottom" constant="18" id="pgC-r7-BHh"/>
+                <constraint firstAttribute="trailing" secondItem="qAo-cN-voG" secondAttribute="trailing" id="rNx-lw-Ek7"/>
+                <constraint firstAttribute="trailing" secondItem="9Rc-Yb-pVn" secondAttribute="trailing" id="ufL-KV-G3R"/>
+                <constraint firstItem="qAo-cN-voG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="x8Y-CE-8uZ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

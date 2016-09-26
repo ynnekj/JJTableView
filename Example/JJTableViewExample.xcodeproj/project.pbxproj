@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E0C90671D98EFD7000BEB6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C90661D98EFD7000BEB6B /* main.m */; };
+		3E0C906A1D98EFD7000BEB6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C90691D98EFD7000BEB6B /* AppDelegate.m */; };
+		3E0C90701D98EFD7000BEB6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E0C906E1D98EFD7000BEB6B /* Main.storyboard */; };
+		3E0C90721D98EFD7000BEB6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E0C90711D98EFD7000BEB6B /* Assets.xcassets */; };
+		3E0C90751D98EFD7000BEB6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E0C90731D98EFD7000BEB6B /* LaunchScreen.storyboard */; };
+		3E0C90A81D98F27C000BEB6B /* headline_menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E0C907E1D98F27C000BEB6B /* headline_menu.plist */; };
+		3E0C90A91D98F27C000BEB6B /* JJHeadlineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C90801D98F27C000BEB6B /* JJHeadlineCell.m */; };
+		3E0C90AA1D98F27C000BEB6B /* JJHeadlineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E0C90811D98F27C000BEB6B /* JJHeadlineCell.xib */; };
+		3E0C90AB1D98F27C000BEB6B /* JJHeadlineHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C90831D98F27C000BEB6B /* JJHeadlineHeader.m */; };
+		3E0C90AC1D98F27C000BEB6B /* JJHeadlineHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E0C90841D98F27C000BEB6B /* JJHeadlineHeader.xib */; };
+		3E0C90AD1D98F27C000BEB6B /* JJHeadlineMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C90861D98F27C000BEB6B /* JJHeadlineMenuController.m */; };
+		3E0C90AE1D98F27C000BEB6B /* JJNewAlipayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C90891D98F27C000BEB6B /* JJNewAlipayCell.m */; };
+		3E0C90AF1D98F27C000BEB6B /* JJNewAlipayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E0C908A1D98F27C000BEB6B /* JJNewAlipayCell.xib */; };
+		3E0C90B01D98F27C000BEB6B /* JJNewAlipayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C908C1D98F27C000BEB6B /* JJNewAlipayController.m */; };
+		3E0C90B11D98F27C000BEB6B /* JJNewAlipaySeparatorHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C908E1D98F27C000BEB6B /* JJNewAlipaySeparatorHeader.m */; };
+		3E0C90B21D98F27C000BEB6B /* JJNewAlipaySeparatorHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E0C908F1D98F27C000BEB6B /* JJNewAlipaySeparatorHeader.xib */; };
+		3E0C90B31D98F27C000BEB6B /* new_alipay_menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E0C90901D98F27C000BEB6B /* new_alipay_menu.plist */; };
+		3E0C90B41D98F27C000BEB6B /* JJOldAlipayBannerHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C90931D98F27C000BEB6B /* JJOldAlipayBannerHeader.m */; };
+		3E0C90B51D98F27C000BEB6B /* JJOldAlipayBannerHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E0C90941D98F27C000BEB6B /* JJOldAlipayBannerHeader.xib */; };
+		3E0C90B61D98F27C000BEB6B /* JJOldAlipayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C90961D98F27C000BEB6B /* JJOldAlipayCell.m */; };
+		3E0C90B71D98F27C000BEB6B /* JJOldAlipayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E0C90971D98F27C000BEB6B /* JJOldAlipayCell.xib */; };
+		3E0C90B81D98F27C000BEB6B /* JJOldAlipayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C90991D98F27C000BEB6B /* JJOldAlipayController.m */; };
+		3E0C90B91D98F27C000BEB6B /* old_alipay_menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E0C909A1D98F27C000BEB6B /* old_alipay_menu.plist */; };
+		3E0C90BA1D98F27C000BEB6B /* horizental.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E0C909D1D98F27C000BEB6B /* horizental.plist */; };
+		3E0C90BB1D98F27C000BEB6B /* JJHorizentalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C909F1D98F27C000BEB6B /* JJHorizentalController.m */; };
+		3E0C90BC1D98F27C000BEB6B /* JJPagingHorizentalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C90A21D98F27C000BEB6B /* JJPagingHorizentalController.m */; };
+		3E0C90BD1D98F27C000BEB6B /* paging_horizental.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E0C90A31D98F27C000BEB6B /* paging_horizental.plist */; };
+		3E0C90BE1D98F27C000BEB6B /* JJVarticalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C90A61D98F27C000BEB6B /* JJVarticalController.m */; };
+		3E0C90BF1D98F27C000BEB6B /* vartical.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E0C90A71D98F27C000BEB6B /* vartical.plist */; };
+		3E0C90D71D98F343000BEB6B /* JJBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C90CC1D98F343000BEB6B /* JJBaseCell.m */; };
+		3E0C90D81D98F343000BEB6B /* JJBaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E0C90CD1D98F343000BEB6B /* JJBaseCell.xib */; };
+		3E0C90D91D98F343000BEB6B /* JJBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C90CF1D98F343000BEB6B /* JJBaseModel.m */; };
+		3E0C90DA1D98F343000BEB6B /* JJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C90D11D98F343000BEB6B /* JJBaseViewController.m */; };
+		3E0C90DB1D98F343000BEB6B /* JJClickEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C90D41D98F343000BEB6B /* JJClickEffectView.m */; };
+		3E0C90DC1D98F343000BEB6B /* JJLayoutConstraintHairline.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C90D61D98F343000BEB6B /* JJLayoutConstraintHairline.m */; };
+		3E0C90E01D9926CC000BEB6B /* JJTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C90DF1D9926CC000BEB6B /* JJTableView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3E0C90621D98EFD7000BEB6B /* JJTableViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJTableViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E0C90661D98EFD7000BEB6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3E0C90681D98EFD7000BEB6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3E0C90691D98EFD7000BEB6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3E0C906F1D98EFD7000BEB6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3E0C90711D98EFD7000BEB6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E0C90741D98EFD7000BEB6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E0C90761D98EFD7000BEB6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E0C907E1D98F27C000BEB6B /* headline_menu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = headline_menu.plist; sourceTree = "<group>"; };
+		3E0C907F1D98F27C000BEB6B /* JJHeadlineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJHeadlineCell.h; sourceTree = "<group>"; };
+		3E0C90801D98F27C000BEB6B /* JJHeadlineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJHeadlineCell.m; sourceTree = "<group>"; };
+		3E0C90811D98F27C000BEB6B /* JJHeadlineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJHeadlineCell.xib; sourceTree = "<group>"; };
+		3E0C90821D98F27C000BEB6B /* JJHeadlineHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJHeadlineHeader.h; sourceTree = "<group>"; };
+		3E0C90831D98F27C000BEB6B /* JJHeadlineHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJHeadlineHeader.m; sourceTree = "<group>"; };
+		3E0C90841D98F27C000BEB6B /* JJHeadlineHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJHeadlineHeader.xib; sourceTree = "<group>"; };
+		3E0C90851D98F27C000BEB6B /* JJHeadlineMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJHeadlineMenuController.h; sourceTree = "<group>"; };
+		3E0C90861D98F27C000BEB6B /* JJHeadlineMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJHeadlineMenuController.m; sourceTree = "<group>"; };
+		3E0C90881D98F27C000BEB6B /* JJNewAlipayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJNewAlipayCell.h; sourceTree = "<group>"; };
+		3E0C90891D98F27C000BEB6B /* JJNewAlipayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJNewAlipayCell.m; sourceTree = "<group>"; };
+		3E0C908A1D98F27C000BEB6B /* JJNewAlipayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJNewAlipayCell.xib; sourceTree = "<group>"; };
+		3E0C908B1D98F27C000BEB6B /* JJNewAlipayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJNewAlipayController.h; sourceTree = "<group>"; };
+		3E0C908C1D98F27C000BEB6B /* JJNewAlipayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJNewAlipayController.m; sourceTree = "<group>"; };
+		3E0C908D1D98F27C000BEB6B /* JJNewAlipaySeparatorHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJNewAlipaySeparatorHeader.h; sourceTree = "<group>"; };
+		3E0C908E1D98F27C000BEB6B /* JJNewAlipaySeparatorHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJNewAlipaySeparatorHeader.m; sourceTree = "<group>"; };
+		3E0C908F1D98F27C000BEB6B /* JJNewAlipaySeparatorHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJNewAlipaySeparatorHeader.xib; sourceTree = "<group>"; };
+		3E0C90901D98F27C000BEB6B /* new_alipay_menu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = new_alipay_menu.plist; sourceTree = "<group>"; };
+		3E0C90921D98F27C000BEB6B /* JJOldAlipayBannerHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJOldAlipayBannerHeader.h; sourceTree = "<group>"; };
+		3E0C90931D98F27C000BEB6B /* JJOldAlipayBannerHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJOldAlipayBannerHeader.m; sourceTree = "<group>"; };
+		3E0C90941D98F27C000BEB6B /* JJOldAlipayBannerHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJOldAlipayBannerHeader.xib; sourceTree = "<group>"; };
+		3E0C90951D98F27C000BEB6B /* JJOldAlipayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJOldAlipayCell.h; sourceTree = "<group>"; };
+		3E0C90961D98F27C000BEB6B /* JJOldAlipayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJOldAlipayCell.m; sourceTree = "<group>"; };
+		3E0C90971D98F27C000BEB6B /* JJOldAlipayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJOldAlipayCell.xib; sourceTree = "<group>"; };
+		3E0C90981D98F27C000BEB6B /* JJOldAlipayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJOldAlipayController.h; sourceTree = "<group>"; };
+		3E0C90991D98F27C000BEB6B /* JJOldAlipayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJOldAlipayController.m; sourceTree = "<group>"; };
+		3E0C909A1D98F27C000BEB6B /* old_alipay_menu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = old_alipay_menu.plist; sourceTree = "<group>"; };
+		3E0C909D1D98F27C000BEB6B /* horizental.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = horizental.plist; sourceTree = "<group>"; };
+		3E0C909E1D98F27C000BEB6B /* JJHorizentalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJHorizentalController.h; sourceTree = "<group>"; };
+		3E0C909F1D98F27C000BEB6B /* JJHorizentalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJHorizentalController.m; sourceTree = "<group>"; };
+		3E0C90A11D98F27C000BEB6B /* JJPagingHorizentalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJPagingHorizentalController.h; sourceTree = "<group>"; };
+		3E0C90A21D98F27C000BEB6B /* JJPagingHorizentalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJPagingHorizentalController.m; sourceTree = "<group>"; };
+		3E0C90A31D98F27C000BEB6B /* paging_horizental.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = paging_horizental.plist; sourceTree = "<group>"; };
+		3E0C90A51D98F27C000BEB6B /* JJVarticalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJVarticalController.h; sourceTree = "<group>"; };
+		3E0C90A61D98F27C000BEB6B /* JJVarticalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJVarticalController.m; sourceTree = "<group>"; };
+		3E0C90A71D98F27C000BEB6B /* vartical.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = vartical.plist; sourceTree = "<group>"; };
+		3E0C90CB1D98F343000BEB6B /* JJBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJBaseCell.h; sourceTree = "<group>"; };
+		3E0C90CC1D98F343000BEB6B /* JJBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJBaseCell.m; sourceTree = "<group>"; };
+		3E0C90CD1D98F343000BEB6B /* JJBaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJBaseCell.xib; sourceTree = "<group>"; };
+		3E0C90CE1D98F343000BEB6B /* JJBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJBaseModel.h; sourceTree = "<group>"; };
+		3E0C90CF1D98F343000BEB6B /* JJBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJBaseModel.m; sourceTree = "<group>"; };
+		3E0C90D01D98F343000BEB6B /* JJBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJBaseViewController.h; sourceTree = "<group>"; };
+		3E0C90D11D98F343000BEB6B /* JJBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJBaseViewController.m; sourceTree = "<group>"; };
+		3E0C90D31D98F343000BEB6B /* JJClickEffectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJClickEffectView.h; sourceTree = "<group>"; };
+		3E0C90D41D98F343000BEB6B /* JJClickEffectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJClickEffectView.m; sourceTree = "<group>"; };
+		3E0C90D51D98F343000BEB6B /* JJLayoutConstraintHairline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJLayoutConstraintHairline.h; sourceTree = "<group>"; };
+		3E0C90D61D98F343000BEB6B /* JJLayoutConstraintHairline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJLayoutConstraintHairline.m; sourceTree = "<group>"; };
+		3E0C90DE1D9926CC000BEB6B /* JJTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJTableView.h; sourceTree = "<group>"; };
+		3E0C90DF1D9926CC000BEB6B /* JJTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJTableView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E0C905F1D98EFD7000BEB6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E0C90591D98EFD7000BEB6B = {
+			isa = PBXGroup;
+			children = (
+				3E0C90DD1D9926CC000BEB6B /* JJTableView */,
+				3E0C90641D98EFD7000BEB6B /* JJTableViewExample */,
+				3E0C90631D98EFD7000BEB6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E0C90631D98EFD7000BEB6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E0C90621D98EFD7000BEB6B /* JJTableViewExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E0C90641D98EFD7000BEB6B /* JJTableViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				3E0C90CA1D98F343000BEB6B /* Base */,
+				3E0C90D21D98F343000BEB6B /* Common */,
+				3E0C909B1D98F27C000BEB6B /* StyleExample */,
+				3E0C907C1D98F27C000BEB6B /* ImitationExample */,
+				3E0C90651D98EFD7000BEB6B /* Supporting Files */,
+			);
+			path = JJTableViewExample;
+			sourceTree = "<group>";
+		};
+		3E0C90651D98EFD7000BEB6B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E0C90761D98EFD7000BEB6B /* Info.plist */,
+				3E0C90661D98EFD7000BEB6B /* main.m */,
+				3E0C90681D98EFD7000BEB6B /* AppDelegate.h */,
+				3E0C90691D98EFD7000BEB6B /* AppDelegate.m */,
+				3E0C906E1D98EFD7000BEB6B /* Main.storyboard */,
+				3E0C90711D98EFD7000BEB6B /* Assets.xcassets */,
+				3E0C90731D98EFD7000BEB6B /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3E0C907C1D98F27C000BEB6B /* ImitationExample */ = {
+			isa = PBXGroup;
+			children = (
+				3E0C90911D98F27C000BEB6B /* OldAlipay */,
+				3E0C90871D98F27C000BEB6B /* NewAlipay */,
+				3E0C907D1D98F27C000BEB6B /* Headline */,
+			);
+			path = ImitationExample;
+			sourceTree = "<group>";
+		};
+		3E0C907D1D98F27C000BEB6B /* Headline */ = {
+			isa = PBXGroup;
+			children = (
+				3E0C90851D98F27C000BEB6B /* JJHeadlineMenuController.h */,
+				3E0C90861D98F27C000BEB6B /* JJHeadlineMenuController.m */,
+				3E0C907F1D98F27C000BEB6B /* JJHeadlineCell.h */,
+				3E0C90801D98F27C000BEB6B /* JJHeadlineCell.m */,
+				3E0C90811D98F27C000BEB6B /* JJHeadlineCell.xib */,
+				3E0C90821D98F27C000BEB6B /* JJHeadlineHeader.h */,
+				3E0C90831D98F27C000BEB6B /* JJHeadlineHeader.m */,
+				3E0C90841D98F27C000BEB6B /* JJHeadlineHeader.xib */,
+				3E0C907E1D98F27C000BEB6B /* headline_menu.plist */,
+			);
+			path = Headline;
+			sourceTree = "<group>";
+		};
+		3E0C90871D98F27C000BEB6B /* NewAlipay */ = {
+			isa = PBXGroup;
+			children = (
+				3E0C908B1D98F27C000BEB6B /* JJNewAlipayController.h */,
+				3E0C908C1D98F27C000BEB6B /* JJNewAlipayController.m */,
+				3E0C90881D98F27C000BEB6B /* JJNewAlipayCell.h */,
+				3E0C90891D98F27C000BEB6B /* JJNewAlipayCell.m */,
+				3E0C908A1D98F27C000BEB6B /* JJNewAlipayCell.xib */,
+				3E0C908D1D98F27C000BEB6B /* JJNewAlipaySeparatorHeader.h */,
+				3E0C908E1D98F27C000BEB6B /* JJNewAlipaySeparatorHeader.m */,
+				3E0C908F1D98F27C000BEB6B /* JJNewAlipaySeparatorHeader.xib */,
+				3E0C90901D98F27C000BEB6B /* new_alipay_menu.plist */,
+			);
+			path = NewAlipay;
+			sourceTree = "<group>";
+		};
+		3E0C90911D98F27C000BEB6B /* OldAlipay */ = {
+			isa = PBXGroup;
+			children = (
+				3E0C90981D98F27C000BEB6B /* JJOldAlipayController.h */,
+				3E0C90991D98F27C000BEB6B /* JJOldAlipayController.m */,
+				3E0C90921D98F27C000BEB6B /* JJOldAlipayBannerHeader.h */,
+				3E0C90931D98F27C000BEB6B /* JJOldAlipayBannerHeader.m */,
+				3E0C90941D98F27C000BEB6B /* JJOldAlipayBannerHeader.xib */,
+				3E0C90951D98F27C000BEB6B /* JJOldAlipayCell.h */,
+				3E0C90961D98F27C000BEB6B /* JJOldAlipayCell.m */,
+				3E0C90971D98F27C000BEB6B /* JJOldAlipayCell.xib */,
+				3E0C909A1D98F27C000BEB6B /* old_alipay_menu.plist */,
+			);
+			path = OldAlipay;
+			sourceTree = "<group>";
+		};
+		3E0C909B1D98F27C000BEB6B /* StyleExample */ = {
+			isa = PBXGroup;
+			children = (
+				3E0C90A41D98F27C000BEB6B /* Vartical */,
+				3E0C909C1D98F27C000BEB6B /* Horizental */,
+				3E0C90A01D98F27C000BEB6B /* PagingHorizental */,
+			);
+			path = StyleExample;
+			sourceTree = "<group>";
+		};
+		3E0C909C1D98F27C000BEB6B /* Horizental */ = {
+			isa = PBXGroup;
+			children = (
+				3E0C909E1D98F27C000BEB6B /* JJHorizentalController.h */,
+				3E0C909F1D98F27C000BEB6B /* JJHorizentalController.m */,
+				3E0C909D1D98F27C000BEB6B /* horizental.plist */,
+			);
+			path = Horizental;
+			sourceTree = "<group>";
+		};
+		3E0C90A01D98F27C000BEB6B /* PagingHorizental */ = {
+			isa = PBXGroup;
+			children = (
+				3E0C90A11D98F27C000BEB6B /* JJPagingHorizentalController.h */,
+				3E0C90A21D98F27C000BEB6B /* JJPagingHorizentalController.m */,
+				3E0C90A31D98F27C000BEB6B /* paging_horizental.plist */,
+			);
+			path = PagingHorizental;
+			sourceTree = "<group>";
+		};
+		3E0C90A41D98F27C000BEB6B /* Vartical */ = {
+			isa = PBXGroup;
+			children = (
+				3E0C90A51D98F27C000BEB6B /* JJVarticalController.h */,
+				3E0C90A61D98F27C000BEB6B /* JJVarticalController.m */,
+				3E0C90A71D98F27C000BEB6B /* vartical.plist */,
+			);
+			path = Vartical;
+			sourceTree = "<group>";
+		};
+		3E0C90CA1D98F343000BEB6B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3E0C90CB1D98F343000BEB6B /* JJBaseCell.h */,
+				3E0C90CC1D98F343000BEB6B /* JJBaseCell.m */,
+				3E0C90CD1D98F343000BEB6B /* JJBaseCell.xib */,
+				3E0C90CE1D98F343000BEB6B /* JJBaseModel.h */,
+				3E0C90CF1D98F343000BEB6B /* JJBaseModel.m */,
+				3E0C90D01D98F343000BEB6B /* JJBaseViewController.h */,
+				3E0C90D11D98F343000BEB6B /* JJBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3E0C90D21D98F343000BEB6B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3E0C90D31D98F343000BEB6B /* JJClickEffectView.h */,
+				3E0C90D41D98F343000BEB6B /* JJClickEffectView.m */,
+				3E0C90D51D98F343000BEB6B /* JJLayoutConstraintHairline.h */,
+				3E0C90D61D98F343000BEB6B /* JJLayoutConstraintHairline.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3E0C90DD1D9926CC000BEB6B /* JJTableView */ = {
+			isa = PBXGroup;
+			children = (
+				3E0C90DE1D9926CC000BEB6B /* JJTableView.h */,
+				3E0C90DF1D9926CC000BEB6B /* JJTableView.m */,
+			);
+			name = JJTableView;
+			path = ../JJTableView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E0C90611D98EFD7000BEB6B /* JJTableViewExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E0C90791D98EFD7000BEB6B /* Build configuration list for PBXNativeTarget "JJTableViewExample" */;
+			buildPhases = (
+				3E0C905E1D98EFD7000BEB6B /* Sources */,
+				3E0C905F1D98EFD7000BEB6B /* Frameworks */,
+				3E0C90601D98EFD7000BEB6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JJTableViewExample;
+			productName = JJTableViewExample;
+			productReference = 3E0C90621D98EFD7000BEB6B /* JJTableViewExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E0C905A1D98EFD7000BEB6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Jkenny;
+				TargetAttributes = {
+					3E0C90611D98EFD7000BEB6B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 3E0C905D1D98EFD7000BEB6B /* Build configuration list for PBXProject "JJTableViewExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E0C90591D98EFD7000BEB6B;
+			productRefGroup = 3E0C90631D98EFD7000BEB6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E0C90611D98EFD7000BEB6B /* JJTableViewExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E0C90601D98EFD7000BEB6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E0C90BD1D98F27C000BEB6B /* paging_horizental.plist in Resources */,
+				3E0C90B21D98F27C000BEB6B /* JJNewAlipaySeparatorHeader.xib in Resources */,
+				3E0C90B91D98F27C000BEB6B /* old_alipay_menu.plist in Resources */,
+				3E0C90B51D98F27C000BEB6B /* JJOldAlipayBannerHeader.xib in Resources */,
+				3E0C90BA1D98F27C000BEB6B /* horizental.plist in Resources */,
+				3E0C90B71D98F27C000BEB6B /* JJOldAlipayCell.xib in Resources */,
+				3E0C90BF1D98F27C000BEB6B /* vartical.plist in Resources */,
+				3E0C90751D98EFD7000BEB6B /* LaunchScreen.storyboard in Resources */,
+				3E0C90721D98EFD7000BEB6B /* Assets.xcassets in Resources */,
+				3E0C90701D98EFD7000BEB6B /* Main.storyboard in Resources */,
+				3E0C90AF1D98F27C000BEB6B /* JJNewAlipayCell.xib in Resources */,
+				3E0C90AA1D98F27C000BEB6B /* JJHeadlineCell.xib in Resources */,
+				3E0C90B31D98F27C000BEB6B /* new_alipay_menu.plist in Resources */,
+				3E0C90A81D98F27C000BEB6B /* headline_menu.plist in Resources */,
+				3E0C90AC1D98F27C000BEB6B /* JJHeadlineHeader.xib in Resources */,
+				3E0C90D81D98F343000BEB6B /* JJBaseCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E0C905E1D98EFD7000BEB6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E0C90B11D98F27C000BEB6B /* JJNewAlipaySeparatorHeader.m in Sources */,
+				3E0C90A91D98F27C000BEB6B /* JJHeadlineCell.m in Sources */,
+				3E0C90B61D98F27C000BEB6B /* JJOldAlipayCell.m in Sources */,
+				3E0C90E01D9926CC000BEB6B /* JJTableView.m in Sources */,
+				3E0C90AB1D98F27C000BEB6B /* JJHeadlineHeader.m in Sources */,
+				3E0C90BE1D98F27C000BEB6B /* JJVarticalController.m in Sources */,
+				3E0C90BC1D98F27C000BEB6B /* JJPagingHorizentalController.m in Sources */,
+				3E0C906A1D98EFD7000BEB6B /* AppDelegate.m in Sources */,
+				3E0C90D71D98F343000BEB6B /* JJBaseCell.m in Sources */,
+				3E0C90AE1D98F27C000BEB6B /* JJNewAlipayCell.m in Sources */,
+				3E0C90DA1D98F343000BEB6B /* JJBaseViewController.m in Sources */,
+				3E0C90DC1D98F343000BEB6B /* JJLayoutConstraintHairline.m in Sources */,
+				3E0C90B81D98F27C000BEB6B /* JJOldAlipayController.m in Sources */,
+				3E0C90B41D98F27C000BEB6B /* JJOldAlipayBannerHeader.m in Sources */,
+				3E0C90DB1D98F343000BEB6B /* JJClickEffectView.m in Sources */,
+				3E0C90BB1D98F27C000BEB6B /* JJHorizentalController.m in Sources */,
+				3E0C90AD1D98F27C000BEB6B /* JJHeadlineMenuController.m in Sources */,
+				3E0C90671D98EFD7000BEB6B /* main.m in Sources */,
+				3E0C90D91D98F343000BEB6B /* JJBaseModel.m in Sources */,
+				3E0C90B01D98F27C000BEB6B /* JJNewAlipayController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3E0C906E1D98EFD7000BEB6B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E0C906F1D98EFD7000BEB6B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3E0C90731D98EFD7000BEB6B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E0C90741D98EFD7000BEB6B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E0C90771D98EFD7000BEB6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3E0C90781D98EFD7000BEB6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E0C907A1D98EFD7000BEB6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = JJTableViewExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.jkenny.JJTableViewExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3E0C907B1D98EFD7000BEB6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = JJTableViewExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.jkenny.JJTableViewExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E0C905D1D98EFD7000BEB6B /* Build configuration list for PBXProject "JJTableViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E0C90771D98EFD7000BEB6B /* Debug */,
+				3E0C90781D98EFD7000BEB6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E0C90791D98EFD7000BEB6B /* Build configuration list for PBXNativeTarget "JJTableViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E0C907A1D98EFD7000BEB6B /* Debug */,
+				3E0C907B1D98EFD7000BEB6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E0C905A1D98EFD7000BEB6B /* Project object */;
+}

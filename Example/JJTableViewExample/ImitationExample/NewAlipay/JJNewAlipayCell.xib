@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="nMB-uk-hth" customClass="JJNewAlipayCell">
+            <rect key="frame" x="0.0" y="0.0" width="75" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4yz-hM-hv3" customClass="JJClickEffectView">
+                    <rect key="frame" x="0.0" y="0.0" width="75" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="余额宝" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohU-JB-PA0">
+                            <rect key="frame" x="0.0" y="51" width="75" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_01" translatesAutoresizingMaskIntoConstraints="NO" id="f9k-Vu-ycO">
+                            <rect key="frame" x="20" y="13" width="34" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="34" id="Gcw-7C-7b4"/>
+                                <constraint firstAttribute="height" constant="34" id="msU-3u-7AG"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cc7-9q-B9w">
+                            <rect key="frame" x="47" y="0.0" width="28" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="2A1-wo-eUy"/>
+                                <constraint firstAttribute="width" constant="28" id="l4z-SO-EmG"/>
+                            </constraints>
+                            <state key="normal" image="app_add"/>
+                            <connections>
+                                <action selector="operationButtonDidclick:" destination="nMB-uk-hth" eventType="touchUpInside" id="mxo-C8-eUV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="f9k-Vu-ycO" firstAttribute="centerX" secondItem="4yz-hM-hv3" secondAttribute="centerX" id="47P-r2-k50"/>
+                        <constraint firstAttribute="trailing" secondItem="ohU-JB-PA0" secondAttribute="trailing" id="A23-aG-I8v"/>
+                        <constraint firstAttribute="trailing" secondItem="cc7-9q-B9w" secondAttribute="trailing" id="E9V-D5-vtu"/>
+                        <constraint firstItem="cc7-9q-B9w" firstAttribute="top" secondItem="4yz-hM-hv3" secondAttribute="top" id="OQN-cF-jj0"/>
+                        <constraint firstItem="f9k-Vu-ycO" firstAttribute="centerY" secondItem="4yz-hM-hv3" secondAttribute="centerY" constant="-10" id="Vq9-AL-VWW"/>
+                        <constraint firstItem="ohU-JB-PA0" firstAttribute="top" secondItem="f9k-Vu-ycO" secondAttribute="bottom" constant="4" id="h8F-Xx-nZQ"/>
+                        <constraint firstItem="ohU-JB-PA0" firstAttribute="leading" secondItem="4yz-hM-hv3" secondAttribute="leading" id="sFN-jh-3ls"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4yz-hM-hv3" secondAttribute="bottom" id="0Yz-Bc-Ov7"/>
+                <constraint firstItem="4yz-hM-hv3" firstAttribute="top" secondItem="nMB-uk-hth" secondAttribute="top" id="Er7-qR-MOm"/>
+                <constraint firstAttribute="trailing" secondItem="4yz-hM-hv3" secondAttribute="trailing" id="Z2X-vG-SAf"/>
+                <constraint firstItem="4yz-hM-hv3" firstAttribute="leading" secondItem="nMB-uk-hth" secondAttribute="leading" id="wPz-fV-vvf"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconView" destination="f9k-Vu-ycO" id="h99-Oe-m9c"/>
+                <outlet property="operationButton" destination="cc7-9q-B9w" id="mpa-oP-TuR"/>
+                <outlet property="title" destination="ohU-JB-PA0" id="Dwe-Rt-3au"/>
+            </connections>
+            <point key="canvasLocation" x="366.5" y="760"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="app_add" width="14" height="14"/>
+        <image name="icon_01" width="27" height="27"/>
+    </resources>
+</document>
