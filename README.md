@@ -165,6 +165,15 @@ Support Interactive Reordering TableView
 ### 更多示例
 查看演示工程 `Example/JJTableViewExample.xcodeproj`
 
+# 安装
+
+### CocoaPods
+
+1. 在 Podfile 中添加 `pod 'JJTableView'`。
+2. 执行 `pod install`。
+3. 导入 \<JJTableView/JJTableView.h\>
+
+
 # 许可证
 JJTableView 使用 MIT 许可证，详情见 LICENSE 文件。
 
