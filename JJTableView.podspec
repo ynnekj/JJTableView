@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JJTableView"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "Support Interactive Reordering TableView."
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.authors      = { "Jkenny" => "jkenny.cn@gmail.com" }
