@@ -323,6 +323,7 @@
 				TargetAttributes = {
 					3E0C90611D98EFD7000BEB6B = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = TC3Z9827YQ;
 					};
 				};
 			};
@@ -507,10 +508,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = TC3Z9827YQ;
 				INFOPLIST_FILE = JJTableViewExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.jkenny.JJTableViewExample;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.jkenny.JJTableViewExample2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -520,10 +522,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = TC3Z9827YQ;
 				INFOPLIST_FILE = JJTableViewExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.jkenny.JJTableViewExample;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.jkenny.JJTableViewExample2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

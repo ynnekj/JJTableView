@@ -1314,6 +1314,9 @@ static NSString *JJTableViewHeaderViewIdentifier = @"headerViewIdentifier";
     __weak JJTableView *weakSelf = self;
     
     if (self.layoutStyle == JJTableViewLayoutStyleVartical) {
+        // 避免 contentSize 小于 frame 时还进行移动
+        if (weakSelf.frame.size.height >= weakSelf.contentSize.height) return;
+
         float upDy = self.contentOffset.y -  CGRectGetMinY(pressedView.frame);
         float downDy = CGRectGetMaxY(pressedView.frame) - (self.contentOffset.y + self.bounds.size.height);
         
@@ -1359,6 +1362,8 @@ static NSString *JJTableViewHeaderViewIdentifier = @"headerViewIdentifier";
             self.scrollTimer.fireDate = [NSDate distantFuture];
         }
     } else if (self.layoutStyle == JJTableViewLayoutStyleHorizental || self.layoutStyle == JJTableViewLayoutStylePagingHorizental) {
+        if (weakSelf.frame.size.width >= weakSelf.contentSize.width) return;
+        
         float leftDy = self.contentOffset.x - CGRectGetMinX(pressedView.frame);
         float rightDy = CGRectGetMaxX(pressedView.frame) - (self.contentOffset.x + self.bounds.size.width);
         
@@ -1595,7 +1600,7 @@ static NSString *JJTableViewHeaderViewIdentifier = @"headerViewIdentifier";
 
 - (UIView *)cellForIndexPath:(NSIndexPath *)indexPath {
     UIView *cellView = [self.dataSource tableView:self cellForItemAtIndexPath:indexPath];
-    JJException(cellView != nil, @"在 collectionView:cellForItemAtIndexPath: 方法没有返回一个有效的 view。");
+    JJException(cellView != nil, @"在 tableView:cellForItemAtIndexPath: 方法没有返回一个有效的 view。");
     
     // 处理不是通过注册方法创建的 cell ，如果有reuseIdentifier属性并且都设置了 reuseIdentifier 依然支持复用
     if (cellView.jj_identifier == nil) {
@@ -1605,11 +1610,12 @@ static NSString *JJTableViewHeaderViewIdentifier = @"headerViewIdentifier";
             
             if ([reuseIdentifier isKindOfClass:[NSString class]] && ![reuseIdentifier isEqualToString:@""]) {
                 cellView.jj_identifier = reuseIdentifier;
-                cellView.jj_delegate = self;
-                BOOL isUseCloseButton = [self.delegate respondsToSelector:@selector(tableView:didClickItemCloseButtonAtIndexPath:)];
-                [cellView jj_prepareCellUseCloseButton:isUseCloseButton closeButtonLocation:self.cellCloseButtonLocation];
             }
         }
+        // 避免当用户不复用 cell 时无法移动
+        cellView.jj_delegate = self;
+        BOOL isUseCloseButton = [self.delegate respondsToSelector:@selector(tableView:didClickItemCloseButtonAtIndexPath:)];
+        [cellView jj_prepareCellUseCloseButton:isUseCloseButton closeButtonLocation:self.cellCloseButtonLocation];
     }
     
     cellView.jj_indexPath = indexPath;
